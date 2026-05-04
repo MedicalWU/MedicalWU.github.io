@@ -2,69 +2,273 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Name - Academic Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanhong Wu - Academic Homepage</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#about">Yanhong Wu</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link active">About Me</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<header>
-    <h1>WU, Yanhong (吴俨洪)</h1>
-    <p>Medical Image Analysis | Deep Learning | CT-US Registration | Robotics</p>
-    <img src="assets/identification photo.jpg" class="avatar">
-</header>
+    <!-- 主体内容 -->
+    <div class="main-container">
+        <!-- About Me 页面 -->
+        <section id="about" class="page-section active">
+            <!-- 顶部照片和名字区域 -->
+            <div class="about-header">
+                <div class="photo-wrapper">
+                    <img src="assets\identification photo.jpg" alt="Yanhong Wu" class="profile-photo">
+                </div>
+                <div class="info-wrapper">
+                    <h1>Yanhong Wu (吴俨洪)</h1>
+                    <p class="title">Master Candidate</p>
+                    <p class="department">School of Mechanical and Electrical Engineering</p>
+                    <p class="institution">University of Electronic Science and Technology of China</p>
+                </div>
+            </div>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#projects">Projects</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
-</nav>
+            <!-- About Me 内容 -->
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I am currently pursuing my Master degree in Mechanical Engineering at the University of Electronic Science and Technology of China (UESTC). My research focuses on biomedical robotics, fault diagnosis, and intelligent systems. I received my Bachelor degree in Mechanical Manufacturing and Automation from UESTC in 2023.</p>
+                <p>During my academic journey, I have developed expertise in signal processing, machine learning, and robotics. I am passionate about applying advanced technologies to solve real-world problems in healthcare and industrial automation.</p>
+            </div>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am interested in medical image analysis, ultrasound image processing,
-        CT-US registration, and deep learning-based surgical navigation.
-    </p>
-</section>
+            <!-- Research Interests -->
+            <div class="research-interests">
+                <h2>Research Interests</h2>
+                <div class="interest-tags">
+                    <span>Biomedical Robotics</span>
+                    <span>Fault Diagnosis</span>
+                    <span>Machine Vision</span>
+                    <span>Medical Image Processing</span>
+                    <span>Intelligent Systems</span>
+                </div>
+            </div>
 
-<section id="research">
-    <h2>Research Interests</h2>
-    <ul>
-        <li>Medical image segmentation</li>
-        <li>CT-US registration</li>
-        <li>Cardiac ultrasound pose estimation</li>
-        <li>Deep learning for surgical navigation</li>
-        <li>Deep </li>
-    </ul>
-</section>
+            <!-- Contact Me -->
+            <div class="contact-section">
+                <h2>Contact Me</h2>
+                <div class="contact-row">
+                    <span class="contact-item">📧 <a href="mailto:yanhongwu@std.uestc.edu.cn">yanhongwu@std.uestc.edu.cn</a></span>
+                    <span class="contact-divider">|</span>
+                    <span class="contact-item">📞 +86-15228922697</span>
+                    <span class="contact-divider">|</span>
+                    <span class="contact-item">🔍 <a href="https://scholar.google.com" target="_blank">Google Scholar</a></span>
+                </div>
+            </div>
+        </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="card">
-        <h3>CT-US Registration Based on Label Masks</h3>
-        <p>
-            A deep learning framework for estimating 6DoF ultrasound probe pose
-            from cardiac anatomical label masks.
-        </p>
+        <!-- Resume 页面 -->
+        <section id="resume" class="page-section">
+            <h1>Resume</h1>
+
+            <!-- 教育背景 -->
+            <div class="section">
+                <h2>Education Background</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">09/2023 - 06/2026</span>
+                        <div class="timeline-content">
+                            <h3>Master of Engineering</h3>
+                            <p>University of Electronic Science and Technology of China</p>
+                            <p class="major">Mechanical Engineering | Biomedical Robotics & Fault Diagnosis</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">09/2019 - 06/2023</span>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Engineering</h3>
+                            <p>University of Electronic Science and Technology of China</p>
+                            <p class="major">Mechanical Manufacturing and Automation | Intelligent Manufacturing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work Experiences -->
+            <div class="section">
+                <h2>Work Experiences</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">08/2025 - Present</span>
+                        <div class="timeline-content">
+                            <h3>Research Assistant</h3>
+                            <p>The Chinese University of Hong Kong, Shenzhen</p>
+                            <p class="major">AIRS Lab | Cardiac US-CT Image Segmentation & Robotics</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">08/2022</span>
+                        <div class="timeline-content">
+                            <h3>Intern</h3>
+                            <p>Siemens Smart Manufacturing (Chengdu) Innovation Center</p>
+                            <p class="major">Production Line Simulation & Optimization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards -->
+            <div class="section">
+                <h2>Awards</h2>
+                <ul class="award-list">
+                    <li>Outstanding Graduate of UESTC</li>
+                    <li>UESTC Graduate Student Scholarship First Prize</li>
+                    <li>SMC Climbing Scholarship</li>
+                    <li>UESTC Graduate Student Freshman Scholarship</li>
+                    <li>Excellent Graduate Student</li>
+                </ul>
+            </div>
+
+            <!-- Teaching -->
+            <div class="section">
+                <h2>Teaching</h2>
+                <ul class="teaching-list">
+                    <li><strong>Teaching Assistant</strong> - Mechanical Engineering Lab (2024)</li>
+                    <li><strong>Teaching Assistant</strong> - Machine Vision Course (2025)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Publications 页面 -->
+        <section id="publications" class="page-section">
+            <h1>Publications</h1>
+
+            <!-- Journal -->
+            <div class="section">
+                <h2>Journal Papers</h2>
+                <ul class="paper-list">
+                    <li>
+                        <span class="paper-title">Under Review: A Pressure Injury Staging Method Based on Complexity Entropy</span>
+                        <span class="paper-meta">SCI Q1 - 1st Author</span>
+                    </li>
+                    <li>
+                        <span class="paper-title">Under Review: Zero-Shot Fault Diagnosis Using Entropy-Guided Learning</span>
+                        <span class="paper-meta">SCI Q2 - 1st Author</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Conference -->
+            <div class="section">
+                <h2>Conference Papers</h2>
+                <ul class="paper-list">
+                    <li>
+                        <span class="paper-title">A Pressure Injury Staging Method Based on Fusion of Multichannel Temporal Features and Dispersion Entropy Information</span>
+                        <span class="paper-meta">SHWID 2025 (Best Paper) - 1st Author</span>
+                    </li>
+                    <li>
+                        <span class="paper-title">Zero-Shot Compound Faults Diagnosis Through Entropy-Guided Semantic Representation Learning</span>
+                        <span class="paper-meta">AIEA 2025 - 1st Author</span>
+                    </li>
+                    <li>
+                        <span class="paper-title">Holospectrum Analysis Method Based on Machine Vision</span>
+                        <span class="paper-meta">PHM 2025 - 1st Author</span>
+                    </li>
+                    <li>
+                        <span class="paper-title">Experimental Study and Flow Prediction of Solenoid Valve Performance Under the Coupled Temperature Field</span>
+                        <span class="paper-meta">ICMA 2025 - 2nd Author</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Workshop -->
+            <div class="section">
+                <h2>Workshop & Preprints</h2>
+                <ul class="paper-list">
+                    <li>
+                        <span class="paper-title">Machine Vision for Medical Equipment Monitoring</span>
+                        <span class="paper-meta">Workshop at IEEE ICME 2025 - 1st Author</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Patents -->
+            <div class="section">
+                <h2>Patents & Copyrights</h2>
+                <p>3 National Software Copyrights | 4 National Patents</p>
+            </div>
+        </section>
+
+        <!-- Research 页面 -->
+        <section id="research" class="page-section">
+            <h1>Research</h1>
+
+            <div class="research-list">
+                <div class="research-item">
+                    <h2>Biomedical Robotics</h2>
+                    <p>Developing intelligent systems for healthcare applications, including non-contact diagnostic tools, surgical robotics, and medical imaging systems that improve patient outcomes.</p>
+                </div>
+
+                <div class="research-item">
+                    <h2>Fault Diagnosis</h2>
+                    <p>Advanced fault diagnosis methods for complex mechanical systems using zero-shot learning approaches and entropy-guided semantic representation learning.</p>
+                </div>
+
+                <div class="research-item">
+                    <h2>Machine Vision</h2>
+                    <p>Machine vision applications for industrial and medical equipment monitoring, including vibration analysis and precision measurement systems.</p>
+                </div>
+
+                <div class="research-item">
+                    <h2>Medical Image Processing</h2>
+                    <p>Cardiac image segmentation and registration for improved diagnosis and treatment planning, collaborating with AIRS Lab at CUHK-Shenzhen.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Current Projects</h2>
+                <ul class="project-highlights">
+                    <li><strong>Intelligent Staging System for Pressure Injury</strong> - Non-contact diagnosis using micro-vibrations and entropy features</li>
+                    <li><strong>Precision Measurement System for Surgical Robots</strong> - NIR-based pose estimation and control</li>
+                </ul>
+            </div>
+        </section>
     </div>
-</section>
 
-<section id="publications">
-    <h2>Publications</h2>
-    <p>Coming soon.</p>
-</section>
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2025 Yanhong Wu. All rights reserved.</p>
+    </footer>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yanhongwu816@gmail.com</p>
-    <p>GitHub: https://medicalwu.github.io</p>
-</section>
+    <script>
+        // 导航切换功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.page-section');
 
-<footer>
-    <p>© 2026 Your Name</p>
-</footer>
-
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // 移除所有导航链接的active类
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    // 添加当前导航链接的active类
+                    this.classList.add('active');
+                    
+                    // 隐藏所有内容区域
+                    sections.forEach(section => section.classList.remove('active'));
+                    
+                    // 获取目标section的ID
+                    const targetId = this.getAttribute('href');
+                    // 显示目标内容区域
+                    document.querySelector(targetId).classList.add('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
